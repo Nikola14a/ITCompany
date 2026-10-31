@@ -1,0 +1,76 @@
+/* responsive nadogradnja - mobile first, ovde samo dopunjujemo style.css za vece ekrane */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1136px;
+  }
+}
+
+@media (min-width: 992px) {
+  .section-title {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+  }
+
+  .navbar-brand img {
+    height: 44px;
+  }
+  .navbar-nav .nav-link {
+    margin-right: 2.5rem;
+  }
+  .navbar-nav .nav-item:last-of-type .nav-link {
+    margin-right: 0;
+  }
+
+  .home {
+    padding: 8rem 0 7rem;
+    background-image: url("../images/home.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-bottom: 4rem;
+  }
+  .home-content-title {
+    font-size: 3.75rem;
+    line-height: 1.05;
+    margin-bottom: 1.7rem;
+  }
+  .home-content-desc {
+    margin-bottom: 3rem;
+  }
+
+  .about {
+    padding: 2rem 0 6rem;
+    background-image: url("../images/about.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-bottom: 6rem;
+  }
+
+  .services {
+    margin-bottom: 7rem;
+  }
+
+  .portfolio {
+    margin-bottom: 6.5rem;
+  }
+  .portfolio-item .portfolio-link {
+    bottom: -5rem;
+    transition: bottom 0.3s linear;
+  }
+  .portfolio-item:hover .portfolio-link {
+    bottom: 1.5rem;
+  }
+  .portfolio-item:hover img {
+    transform: scale(1.15);
+  }
+
+  .contact {
+    background-image: url("../images/footer.png");
+    padding: 9rem 0 6rem;
+  }
+  .contact-map {
+    height: 450px;
+  }
+}
